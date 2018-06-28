@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Json.Comparer.Core</id>
+    <version>0.6.1</version>
+    <title>Json.Comparer.Core</title>
+    <authors>Patrick van Lohuizen</authors>
+    <owners>Ricky Vega</owners>
+    <licenseUrl>https://github.com/rvegajr/Json.Comparer/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/rvegajr/Json.Comparer/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>From Patrick van Lohuizen: "Deep compares 2 objects or jtokens/jarrays/jobjects and returns the the result of the comparrison per element/property. allowing for reporting of difference between all kinds of objects."
+	
+	Last commit of this project was Nov 30, 2017,  so I forked it and added .net core and .net standard targets in addition to .net 4.7.2 </description>
+    <summary>Deep compares 2 objects or JTokens and returns the the result of the comparrison per element/property. allowing for reporting of difference between all kinds of objects.</summary>
+    <releaseNotes>
+      Forked from Original project (much respect to Patrick van Lohuizen) and added the targets netstandard2.0;net452;net462;net472;netcoreapp1.0;netcoreapp2.0
+    </releaseNotes>
+    <copyright>Patrick van Lohuizen</copyright>
+    <language>en-US</language>
+    <tags>json,compare,comparer,newtonsoft.json,.net,.netcore</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5.2">
+		  <dependency id="Newtonsoft.Json" version="11.0.2" exclude="Build,Analyzers" />
+		  <dependency id="NullGuard.Fody" version="1.8.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.6.2">
+		  <dependency id="Newtonsoft.Json" version="11.0.2" exclude="Build,Analyzers" />
+		  <dependency id="NullGuard.Fody" version="1.8.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.7.2">
+		  <dependency id="Newtonsoft.Json" version="11.0.2" exclude="Build,Analyzers" />
+		  <dependency id="NullGuard.Fody" version="1.8.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETCoreApp1.0">
+		  <dependency id="Newtonsoft.Json" version="11.0.2" exclude="Build,Analyzers" />
+		  <dependency id="NullGuard.Fody" version="1.8.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETCoreApp2.0">
+		  <dependency id="Newtonsoft.Json" version="11.0.2" exclude="Build,Analyzers" />
+		  <dependency id="NullGuard.Fody" version="1.8.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+		  <dependency id="Newtonsoft.Json" version="11.0.2" exclude="Build,Analyzers" />
+		  <dependency id="NullGuard.Fody" version="1.8.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>	
+  </metadata>
+  <files>
+    <file src="..\Json.Comparer\bin\Release\net452\Json.Comparer.dll" target="lib\net452\Json.Comparer.dll" />
+    <file src="..\Json.Comparer\bin\Release\net452\Json.Comparer.pdb" target="lib\net452\Json.Comparer.pdb" />
+    <file src="..\Json.Comparer.TextResultReporter\bin\Release\net452\Json.Comparer.TextResultReporter.dll" target="lib\net452\Json.Comparer.TextResultReporter.dll" />
+    <file src="..\Json.Comparer.TextResultReporter\bin\Release\net452\Json.Comparer.TextResultReporter.pdb" target="lib\net452\Json.Comparer.TextResultReporter.pdb" />
+    <file src="..\Json.Comparer\bin\Release\net462\Json.Comparer.dll" target="lib\net462\Json.Comparer.dll" />
+    <file src="..\Json.Comparer\bin\Release\net462\Json.Comparer.pdb" target="lib\net462\Json.Comparer.pdb" />
+    <file src="..\Json.Comparer.TextResultReporter\bin\Release\net462\Json.Comparer.TextResultReporter.dll" target="lib\net462\Json.Comparer.TextResultReporter.dll" />
+    <file src="..\Json.Comparer.TextResultReporter\bin\Release\net462\Json.Comparer.TextResultReporter.pdb" target="lib\net462\Json.Comparer.TextResultReporter.pdb" />
+    <file src="..\Json.Comparer\bin\Release\net472\Json.Comparer.dll" target="lib\net472\Json.Comparer.dll" />
+    <file src="..\Json.Comparer\bin\Release\net472\Json.Comparer.pdb" target="lib\net472\Json.Comparer.pdb" />
+    <file src="..\Json.Comparer.TextResultReporter\bin\Release\net472\Json.Comparer.TextResultReporter.dll" target="lib\net472\Json.Comparer.TextResultReporter.dll" />
+    <file src="..\Json.Comparer.TextResultReporter\bin\Release\net472\Json.Comparer.TextResultReporter.pdb" target="lib\net472\Json.Comparer.TextResultReporter.pdb" />
+    <file src="..\Json.Comparer\bin\Release\netcoreapp1.0\Json.Comparer.dll" target="lib\netcoreapp1.0\Json.Comparer.dll" />
+    <file src="..\Json.Comparer\bin\Release\netcoreapp1.0\Json.Comparer.pdb" target="lib\netcoreapp1.0\Json.Comparer.pdb" />
+    <file src="..\Json.Comparer.TextResultReporter\bin\Release\netcoreapp1.0\Json.Comparer.TextResultReporter.dll" target="lib\netcoreapp1.0\Json.Comparer.TextResultReporter.dll" />
+    <file src="..\Json.Comparer.TextResultReporter\bin\Release\netcoreapp1.0\Json.Comparer.TextResultReporter.pdb" target="lib\netcoreapp1.0\Json.Comparer.TextResultReporter.pdb" />
+    <file src="..\Json.Comparer\bin\Release\netcoreapp2.0\Json.Comparer.dll" target="lib\netcoreapp2.0\Json.Comparer.dll" />
+    <file src="..\Json.Comparer\bin\Release\netcoreapp2.0\Json.Comparer.pdb" target="lib\netcoreapp2.0\Json.Comparer.pdb" />
+    <file src="..\Json.Comparer.TextResultReporter\bin\Release\netcoreapp2.0\Json.Comparer.TextResultReporter.dll" target="lib\netcoreapp2.0\Json.Comparer.TextResultReporter.dll" />
+    <file src="..\Json.Comparer.TextResultReporter\bin\Release\netcoreapp2.0\Json.Comparer.TextResultReporter.pdb" target="lib\netcoreapp2.0\Json.Comparer.TextResultReporter.pdb" />
+    <file src="..\Json.Comparer\bin\Release\netstandard2.0\Json.Comparer.dll" target="lib\netstandard2.0\Json.Comparer.dll" />
+    <file src="..\Json.Comparer\bin\Release\netstandard2.0\Json.Comparer.pdb" target="lib\netstandard2.0\Json.Comparer.pdb" />
+    <file src="..\Json.Comparer.TextResultReporter\bin\Release\netstandard2.0\Json.Comparer.TextResultReporter.dll" target="lib\netstandard2.0\Json.Comparer.TextResultReporter.dll" />
+    <file src="..\Json.Comparer.TextResultReporter\bin\Release\netstandard2.0\Json.Comparer.TextResultReporter.pdb" target="lib\netstandard2.0\Json.Comparer.TextResultReporter.pdb" />
+  </files>
+</package>

@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using FluentAssertions;
+
 using Json.Comparer.Filters;
 using Json.Comparer.Tests.Filters;
 using Json.Comparer.Tests.TestObjects;
 using Newtonsoft.Json.Linq;
 using Xunit;
+using FluentAssertions;
 
 namespace Json.Comparer.Tests
 {

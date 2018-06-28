@@ -24,7 +24,7 @@ namespace Json.Comparer.Tests
 
             var result = (JObjectComparrisonResult)new JTokenComparer(new CustomArrayKeySelector()).CompareTokens("root", jobject, jobject2);
 
-            result.ComparrisonResult.ShouldBeEquivalentTo(ComparisonResult.Identical);
+            Assert.True(result.ComparrisonResult.Equals(ComparisonResult.Identical));
         }
 
         [Fact]

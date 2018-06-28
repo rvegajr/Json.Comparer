@@ -5,5 +5,5 @@ nuget.exe update -self
 CALL Build.bat
 
 mkdir Publish
-NuGet Pack "Json.Comparer.nuspec" -OutputDirectory "Publish"
+NuGet Pack "Json.Comparer.Core.nuspec" -OutputDirectory "Publish"
 pause

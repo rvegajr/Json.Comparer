@@ -1,9 +1,9 @@
 ﻿using System.Linq;
-using FluentAssertions;
 using Json.Comparer.Tests.TestObjects;
 using Json.Comparer.ValueConverters;
 using Newtonsoft.Json.Linq;
 using Xunit;
+using FluentAssertions;
 
 namespace Json.Comparer.Tests
 {

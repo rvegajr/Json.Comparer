@@ -33,8 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -52,7 +52,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Json.Comparer.TextResultReporter\Json.Comparer.TextResultReporter.csproj">
@@ -60,7 +59,7 @@
       <Name>Json.Comparer.TextResultReporter</Name>
     </ProjectReference>
     <ProjectReference Include="..\Json.Comparer\Json.Comparer.csproj">
-      <Project>{c5740dbc-aa93-4569-9bf9-938ce381f1e6}</Project>
+      <Project>{ff0f148f-07f2-428e-ba79-39e58315e9b1}</Project>
       <Name>Json.Comparer</Name>
     </ProjectReference>
   </ItemGroup>

@@ -30,9 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GitLink, Version=2.4.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\gitlink.2.4.1\lib\net45\GitLink.exe</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,12 +46,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Json.Comparer\Json.Comparer.csproj">
-      <Project>{C5740DBC-AA93-4569-9BF9-938CE381F1E6}</Project>
+      <Project>{ff0f148f-07f2-428e-ba79-39e58315e9b1}</Project>
       <Name>Json.Comparer</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
