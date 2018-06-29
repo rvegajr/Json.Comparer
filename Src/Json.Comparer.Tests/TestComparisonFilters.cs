@@ -13,7 +13,7 @@ using FluentAssertions;
 
 namespace Json.Comparer.Tests
 {
-    public class TestComparrisonFilters
+    public class TestComparisonFilters
     {
         [Fact]
         public void WhenfilteringAllNotDifferenceShouldReported()
@@ -23,7 +23,7 @@ namespace Json.Comparer.Tests
 
             var compareResult = new JTokenComparer(new IndexArrayKeySelector(), new FilterAll()).Compare(jobject, jobject2);
 
-            compareResult.ComparrisonResult.Should().Be(ComparisonResult.Filtered, because: "I Filtered everything");
+            compareResult.ComparisonResult.Should().Be(ComparisonResult.Filtered, because: "I Filtered everything");
         }
 
         [Fact]
@@ -34,9 +34,9 @@ namespace Json.Comparer.Tests
 
             var compareResult = new JTokenComparer(new IndexArrayKeySelector(), new FilterPropertyByName("IntProperty")).CompareObjects("root", jobject1, jobject2);
 
-            compareResult.ComparrisonResult.Should().Be(ComparisonResult.Identical, because: "Every different property is filtered.");
-            compareResult.PropertyComparrisons
-                .Count(x => x.ComparrisonResult == ComparisonResult.Different)
+            compareResult.ComparisonResult.Should().Be(ComparisonResult.Identical, because: "Every different property is filtered.");
+            compareResult.PropertyComparisons
+                .Count(x => x.ComparisonResult == ComparisonResult.Different)
                 .Should().Be(0, because: "There is 1 different propertybut it is filtered.");
         }
     }

@@ -5,7 +5,7 @@ namespace Json.Comparer
     /// <summary>
     /// The result of a JToken comparison.
     /// </summary>
-    public class JPropertyComparrisonResult : JTokenComparrisonResult
+    public class JPropertyComparisonResult : JTokenComparisonResult
     {
         /// <summary>
         /// The type of JToken compared
@@ -18,9 +18,9 @@ namespace Json.Comparer
         public string Name { get; set; }
 
         /// <summary>
-        /// The comparrisonresult of the value of the property.
+        /// The comparisonresult of the value of the property.
         /// </summary>
         [AllowNull]
-        public JTokenComparrisonResult PropertyValueComparissonResult { get; set; }
+        public JTokenComparisonResult PropertyValueComparissonResult { get; set; }
     }
 }

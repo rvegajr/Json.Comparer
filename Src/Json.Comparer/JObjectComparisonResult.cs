@@ -5,7 +5,7 @@ namespace Json.Comparer
     /// <summary>
     /// A ComparisonResult for JObjectToken elements.
     /// </summary>
-    public class JObjectComparrisonResult : JTokenComparrisonResult
+    public class JObjectComparisonResult : JTokenComparisonResult
     {
         /// <summary>
         /// The type of JToken compared
@@ -13,8 +13,8 @@ namespace Json.Comparer
         public override ComparedTokenType Type { get; } = ComparedTokenType.Object;
 
         /// <summary>
-        /// The comparrisonResults for all properties in the object.
+        /// The comparisonResults for all properties in the object.
         /// </summary>
-        public IEnumerable<JTokenComparrisonResult> PropertyComparrisons { get; set; } = new List<JTokenComparrisonResult>();
+        public IEnumerable<JTokenComparisonResult> PropertyComparisons { get; set; } = new List<JTokenComparisonResult>();
     }
 }

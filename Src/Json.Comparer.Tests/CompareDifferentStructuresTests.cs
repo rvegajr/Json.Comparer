@@ -14,8 +14,8 @@ namespace Json.Comparer.Tests
             simpleObject1.AAA = "";
             dynamic simpleObject2 = new ExpandoObject();
             simpleObject2.BBB = "";
-            var compareResult = new JTokenComparer(new IndexArrayKeySelector(), Enumerable.Empty<IComparrisonFilter>(), new ComparisonResult[] { ComparisonResult.MissingInSource2 }, new NonConvertingConverter()).Compare(simpleObject1, simpleObject2);
-            Assert.True(((JObjectComparrisonResult)compareResult).ComparrisonResult.Equals(ComparisonResult.Different), "The JObjects have different key names");
+            var compareResult = new JTokenComparer(new IndexArrayKeySelector(), Enumerable.Empty<IComparisonFilter>(), new ComparisonResult[] { ComparisonResult.MissingInSource2 }, new NonConvertingConverter()).Compare(simpleObject1, simpleObject2);
+            Assert.True(((JObjectComparisonResult)compareResult).ComparisonResult.Equals(ComparisonResult.Different), "The JObjects have different key names");
         }
 
         [Fact]
@@ -25,8 +25,8 @@ namespace Json.Comparer.Tests
             simpleObject1.AAA = "";
             dynamic simpleObject2 = new ExpandoObject();
             simpleObject2.AAA = "";
-            var compareResult = new JTokenComparer(new IndexArrayKeySelector(), Enumerable.Empty<IComparrisonFilter>(), new ComparisonResult[] { ComparisonResult.MissingInSource2 }, new NonConvertingConverter()).Compare(simpleObject1, simpleObject2);
-            Assert.True(((JObjectComparrisonResult)compareResult).ComparrisonResult.Equals(ComparisonResult.Identical), "The JObjects have the same key names");
+            var compareResult = new JTokenComparer(new IndexArrayKeySelector(), Enumerable.Empty<IComparisonFilter>(), new ComparisonResult[] { ComparisonResult.MissingInSource2 }, new NonConvertingConverter()).Compare(simpleObject1, simpleObject2);
+            Assert.True(((JObjectComparisonResult)compareResult).ComparisonResult.Equals(ComparisonResult.Identical), "The JObjects have the same key names");
         }
     }
 }

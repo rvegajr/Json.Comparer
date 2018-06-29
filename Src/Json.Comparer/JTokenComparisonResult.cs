@@ -3,7 +3,7 @@
     /// <summary>
     /// The result of a comparison.
     /// </summary>
-    public class JTokenComparrisonResult
+    public class JTokenComparisonResult
     {
         public string Key { get; set; }
 
@@ -15,8 +15,8 @@
         public virtual ComparedTokenType Type { get; }
 
         /// <summary>
-        /// The result of the comparrison. Different if the token or any of the child elements are different.
+        /// The result of the comparison. Different if the token or any of the child elements are different.
         /// </summary>
-        public ComparisonResult ComparrisonResult { get; set; }
+        public ComparisonResult ComparisonResult { get; set; }
     }
 }

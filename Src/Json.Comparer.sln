@@ -7,19 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Json.Comparer.Tests", "Json
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Json.Comparer.TextResultReporter", "Json.Comparer.TextResultReporter\Json.Comparer.TextResultReporter.csproj", "{2202605A-DA9F-4041-9B6D-05855CDAD0BE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuget", "Nuget", "{E6639411-F62E-4B57-BC90-C6927A9A5A78}"
-	ProjectSection(SolutionItems) = preProject
-		Nuget\Build.bat = Nuget\Build.bat
-		Nuget\Json.Comparer.nuspec = Nuget\Json.Comparer.nuspec
-		Nuget\NuGet.Config = Nuget\NuGet.Config
-		Nuget\NuGet.exe = Nuget\NuGet.exe
-		Nuget\PackageAndPublishLocal.bat = Nuget\PackageAndPublishLocal.bat
-		Nuget\PackageAndPublishToNuget.bat = Nuget\PackageAndPublishToNuget.bat
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Json.Comparer.PerformanceTest", "Json.Comparer.PerformanceTest\Json.Comparer.PerformanceTest.csproj", "{3AEC405A-697F-401A-8427-396372BCB12B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Json.Comparer", "Json.Comparer\Json.Comparer.csproj", "{FF0F148F-07F2-428E-BA79-39E58315E9B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Json.Comparer", "Json.Comparer\Json.Comparer.csproj", "{FF0F148F-07F2-428E-BA79-39E58315E9B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

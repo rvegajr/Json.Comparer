@@ -2,7 +2,7 @@
 
 namespace Json.Comparer
 {
-    public class TokencomparrisonInput<TJtokenType> : TokencomparrisonInputBase
+    public class TokencomparisonInput<TJtokenType> : TokencomparisonInputBase
         where TJtokenType : JToken
     {
         public override string Key { get; set; }
@@ -11,9 +11,9 @@ namespace Json.Comparer
 
         new public TJtokenType Token2 { get; set; }
 
-        public static TokencomparrisonInput<JToken> FromJoinwithKey<TKey>(JoinResultWithKey<TJtokenType, TKey> value)
+        public static TokencomparisonInput<JToken> FromJoinwithKey<TKey>(JoinResultWithKey<TJtokenType, TKey> value)
         {
-            return new TokencomparrisonInput<JToken>
+            return new TokencomparisonInput<JToken>
             {
                 Key = value.Key?.ToString(),
                 Token1 = value.Value1,
@@ -21,14 +21,14 @@ namespace Json.Comparer
             };
         }
 
-        public static TokencomparrisonInput<TJtokenTypeCreate> Create<TJtokenTypeCreate>(string key, TJtokenTypeCreate value1, TJtokenTypeCreate value2)
+        public static TokencomparisonInput<TJtokenTypeCreate> Create<TJtokenTypeCreate>(string key, TJtokenTypeCreate value1, TJtokenTypeCreate value2)
             where TJtokenTypeCreate : JToken
         {
-            return new TokencomparrisonInput<TJtokenTypeCreate> { Key = key, Token1 = value1, Token2 = value2 };
+            return new TokencomparisonInput<TJtokenTypeCreate> { Key = key, Token1 = value1, Token2 = value2 };
         }
     }
 
-    public class TokencomparrisonInputBase
+    public class TokencomparisonInputBase
     {
         public virtual string Key { get; set; }
 

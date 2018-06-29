@@ -1,7 +1,7 @@
 ﻿namespace Json.Comparer
 {
     /// <summary>
-    /// The result of a comparrison.
+    /// The result of a comparison.
     /// </summary>
     public enum ComparisonResult
     {
@@ -26,12 +26,12 @@
         MissingInSource2,
 
         /// <summary>
-        /// The element is of a different type in source and target. This indicates there is an incorrect comparrison.
+        /// The element is of a different type in source and target. This indicates there is an incorrect comparison.
         /// </summary>
         DifferentTypes,
 
         /// <summary>
-        /// The tokens comparrison was skipped and filtered out.
+        /// The tokens comparison was skipped and filtered out.
         /// </summary>
         Filtered,
     }
