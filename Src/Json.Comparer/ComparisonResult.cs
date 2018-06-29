@@ -1,5 +1,42 @@
-﻿namespace Json.Comparer
+﻿using System.Collections.Generic;
+
+namespace Json.Comparer
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    public class ComparisonResults
+    {
+        public ComparisonResults()
+        {
+        }
+        public ComparisonResult Result { get; set; } = ComparisonResult.Unknown;
+        public bool AreEqual
+        {
+            get
+            {
+                return this.Result == ComparisonResult.Identical;
+            }
+        }
+        public List<string> PropertyComparison { get; set; } = new List<string>();
+        public List<string> DifferencesComparison { get; set; } = new List<string>();
+
+        public string DifferencesString
+        {
+            get
+            {
+                return string.Join("\n", DifferencesComparison.ToArray());
+            }
+        }
+
+        public int DifferencesCount
+        {
+            get
+            {
+                return DifferencesComparison.Count;
+            }
+        }
+    }
     /// <summary>
     /// The result of a comparison.
     /// </summary>
@@ -34,5 +71,10 @@
         /// The tokens comparison was skipped and filtered out.
         /// </summary>
         Filtered,
+        /// <summary>
+        /// Not evaluated yet
+        /// </summary>
+        Unknown
+
     }
 }

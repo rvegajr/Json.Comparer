@@ -37,16 +37,16 @@ namespace Json.Comparer.TextResultReporter
 
         private static string ReportProperty(JPropertyComparisonResult propertyComparison, IEnumerable<ComparisonResult> resultsToReport, ReporterSettings settings)
         {
-            if (propertyComparison.PropertyValueComparissonResult?.Type == ComparedTokenType.Value)
+            if (propertyComparison.PropertyValueComparisonResult?.Type == ComparedTokenType.Value)
             {
                 return (ReportElement(propertyComparison, settings)
-                    + ReportValue((JValueComparisonResult)propertyComparison.PropertyValueComparissonResult, resultsToReport, settings)).TrimEnd(Environment.NewLine.ToCharArray());
+                    + ReportValue((JValueComparisonResult)propertyComparison.PropertyValueComparisonResult, resultsToReport, settings)).TrimEnd(Environment.NewLine.ToCharArray());
             }
             else
             {
                 return (ReportElement(propertyComparison, settings)
                     + Environment.NewLine
-                    + Report(propertyComparison.PropertyValueComparissonResult, resultsToReport, settings)).TrimEnd(Environment.NewLine.ToCharArray());
+                    + Report(propertyComparison.PropertyValueComparisonResult, resultsToReport, settings)).TrimEnd(Environment.NewLine.ToCharArray());
             }
         }
 

@@ -257,7 +257,7 @@ namespace Json.Comparer
                 Path = property1.Path,
                 Name = property1.Name,
                 ComparisonResult = comparisonResult.ComparisonResult,
-                PropertyValueComparissonResult = comparisonResult
+                PropertyValueComparisonResult = comparisonResult
             };
         }
 
