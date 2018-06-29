@@ -97,7 +97,7 @@ Task("NuGet-Pack")
    var nuGetPackSettings   = new NuGetPackSettings {
 		BasePath 				= thisDir,
         Id                      = @"Json.Comparer.Core",
-        Version                 = @"0.6.2",
+        Version                 = @"0.6.9",
         Title                   = @"Json.Comparer.Core",
         Authors                 = new[] {"Patrick van Lohuizen"},
         Owners                  = new[] {"Ricardo Vega Jr."},

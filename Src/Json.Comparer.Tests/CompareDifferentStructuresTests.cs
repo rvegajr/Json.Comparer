@@ -60,7 +60,7 @@ namespace Json.Comparer.Tests
         {
             ComparisonResults res = (new CompareLogic()).Compare(new ComplexTestObject(), new ComplexTestObject());
             Assert.True(res.DifferencesCount.Equals(0), "The JObjects should not have any differences and the count should be zero");
-            Assert.True(!res.AreEqual, "The JObjects have different key names");
+            Assert.True(res.AreEqual, "The JObjects have different key names");
         }
 
         [Fact]
