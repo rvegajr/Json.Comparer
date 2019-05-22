@@ -19,7 +19,7 @@ namespace Json.Comparer
             var jsonSer2 = new JsonSerializer() { TypeNameHandling = Config.TypeNameHandling, PreserveReferencesHandling = Config.PreserveReferencesHandling };
             var jobject = JToken.FromObject(object1, jsonSer);
             var jobject2 = JToken.FromObject(object2, jsonSer2);
-            var ret = (JObjectComparisonResult)new JTokenComparer(new IndexArrayKeySelector()).CompareTokens(Config.CompareTokenKey, jobject, jobject2);
+            var ret = new JTokenComparer(new IndexArrayKeySelector()).CompareTokens(Config.CompareTokenKey, jobject, jobject2);
             results.Result = ret.ComparisonResult;
             results.DifferencesComparison = ret.AsStringList(true);
             results.PropertyComparison = ret.AsStringList();
